@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -8,10 +10,14 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            {/* Photo placeholder */}
             <div className="flex justify-center">
-              <div className="flex h-96 w-80 items-center justify-center rounded-lg bg-gray-400 shadow-lg">
-                <span className="text-sm text-gray-600">Todd&apos;s Photo</span>
+              <div className="relative h-96 w-72 overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/media/portrait.png"
+                  alt="Todd Fisher, Lieutenant and Recruitment Specialist"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -172,7 +178,7 @@ export default function Home() {
               <h3 className="mb-3 text-xl font-semibold text-gray-900">
                 Interview Preparation
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 Get insider tips on what interviewers are looking for, practice
                 common questions, and feel confident going into your interview.
               </p>
@@ -180,7 +186,7 @@ export default function Home() {
                 href="https://www.hrmrecruit.com/blog/2019/03/interview-hacks-5-cs-employers-seek-in-you"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#55a1d5] hover:text-[#2b4c8d] text-sm font-medium inline-flex items-center"
+                className="inline-flex items-center text-sm font-medium text-[#55a1d5] hover:text-[#2b4c8d]"
               >
                 Get expert interview tips →
               </a>
@@ -324,12 +330,12 @@ export default function Home() {
           </div>
 
           {/* Action buttons */}
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="https://www.pa.gov/agencies/employment/open-jobs.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-[#2b4c8d] px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors text-center border-2 border-white"
+              className="rounded-md border-2 border-white bg-white px-8 py-3 text-center font-semibold text-[#2b4c8d] transition-colors hover:bg-gray-100"
             >
               View Open Positions
             </a>
@@ -337,7 +343,7 @@ export default function Home() {
               href="https://www.pa.gov/agencies/employment/benefits.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-[#2b4c8d] transition-colors text-center"
+              className="rounded-md border-2 border-white px-8 py-3 text-center font-semibold text-white transition-colors hover:bg-white hover:text-[#2b4c8d]"
             >
               Learn About Benefits
             </a>
@@ -430,14 +436,16 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="mb-1 font-semibold text-gray-900">Facebook</h4>
+                    <h4 className="mb-1 font-semibold text-gray-900">
+                      Facebook
+                    </h4>
                     <a
-                      href="https://www.facebook.com/share/1FeJSSAjMZ/?mibextid=wwXIfr"
+                      href="https://www.facebook.com/share/1FeJSSAjMZ"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-[#55a1d5]"
                     >
-                      Connect
+                      Connect Here
                     </a>
                   </div>
                 </div>
