@@ -60,21 +60,38 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <a href="#hero" className="text-gray-700 hover:text-[#55a1d5] font-medium">
+              <a
+                href="#hero"
+                className="text-gray-700 hover:text-[#55a1d5] font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 Home
               </a>
-              <a href="#about" className="text-gray-700 hover:text-[#55a1d5] font-medium">
+              <a
+                href="#about"
+                className="text-gray-700 hover:text-[#55a1d5] font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 About
               </a>
-              <a href="#services" className="text-gray-700 hover:text-[#55a1d5] font-medium">
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-[#55a1d5] font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 Services
               </a>
-              <a href="#benefits" className="text-gray-700 hover:text-[#55a1d5] font-medium">
+              <a
+                href="#benefits"
+                className="text-gray-700 hover:text-[#55a1d5] font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 Benefits
               </a>
               <a
                 href="#contact"
                 className="bg-[#55a1d5] text-white px-6 py-3 rounded-md font-medium hover:bg-[#1e3660] transition-colors text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </a>
