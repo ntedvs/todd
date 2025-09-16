@@ -134,7 +134,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="rounded-lg border-2 border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
+            <div className="rounded-lg border border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#55a1d5]">
                 <svg
                   className="h-8 w-8 text-white"
@@ -159,7 +159,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
+            <div className="rounded-lg border border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#55a1d5]">
                 <svg
                   className="h-8 w-8 text-white"
@@ -192,7 +192,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
+            <div className="rounded-lg border border-gray-200 p-6 text-center transition-shadow hover:shadow-lg">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#55a1d5]">
                 <svg
                   className="h-8 w-8 text-white"
@@ -335,7 +335,7 @@ export default function Home() {
               href="https://www.pa.gov/agencies/employment/open-jobs.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md border-2 border-white bg-white px-8 py-3 text-center font-semibold text-[#2b4c8d] transition-colors hover:bg-gray-200"
+              className="rounded-md border-2 border-white bg-white px-8 py-3 text-center font-semibold text-[#2b4c8d] transition-colors hover:bg-gray-100"
             >
               View Open Positions
             </a>
